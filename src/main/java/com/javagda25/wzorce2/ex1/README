@@ -1,0 +1,22 @@
+Zadanie 1:
+Stwórz klasę abstrakcyjną AbstractPC która posiada:
+pole tekst - nazwę komputera
+pole ComputerBrand - (enum) markę komputera
+pole cpuPower - moc komputera (int 0-100)
+pole gpuPower - moc grafiki komputera (double 0.00 - 1.00)
+pole isOverclocked - flaga definiująca czy komputer był "podrasowany"
+
+
+ComputerBrand: ASUS, HP, SAMSUNG, APPLE
+Stwórz klasy dziedziczące:
+AsusPC, HpPC, SamsungPC, AppleMac które dziedziczą po komputerze.
+W każdej klasie stwórz metody factory. Dla każdej marki wymyśl dwa komputery.
+(np. stwórz metodę createAsusN53, createAsusH23, createMacProRetina15 …)
+
+https://bitbucket.org/nordeagda2/designpatterncomputerabstractfactory
+
+Dodatkowe:
+Dodaj klasę factory i dla dowolnych dwóch marek komputerów dodaj po jednej metodzie factory do tworzenia obiektów.
+
+Stwórz klasę Main, dodaj kilka komputerów do listy, a następnie przeiteruj listę i wypisz wszystkie parametry
+ komputerów na konsolę (przyda się metoda …?).

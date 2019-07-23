@@ -1,0 +1,10 @@
+Zadanie 1:
+Stwórz aplikację a w niej klasę GameCharacter która jest postacią w grze. Postać powinna
+mieć pola:
+name,
+health,
+mana,
+number of points
+Stwórz w niej buildera.
+W mainie stwórz kolekcję postaci (listę lub set) i dodaj do niej kilka takich samych postaci,
+oraz kilka postaci odrobinę zmodyfikowanych (punktami lub mana i życiem).
