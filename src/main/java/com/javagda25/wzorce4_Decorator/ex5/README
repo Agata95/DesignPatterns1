@@ -1,0 +1,8 @@
+Zadanie 5*:
+Dekorator choinki (trójkąta).
+Stwórz klasę SimpleChristmasTree która posiada metodę printTree(). Pod wpływem wykonania tej metody klasa ma wypisać
+na ekran choinkę/trójkąt z gwiazdek.
+
+Stwórz klasę dekorującą DecoratedChristmasTree która jako parametr konstruktora przyjmuje SimpleChristmasTree.
+Udekorowana klasa powinna na tą samą metodę printTree() wypisywać na ekran trójkąt/choinkę, ale w losowych miejscach
+tego trójkąta/choinki powinna wpisywać ‘O’ zamiast gwiazdki ‘*’.
