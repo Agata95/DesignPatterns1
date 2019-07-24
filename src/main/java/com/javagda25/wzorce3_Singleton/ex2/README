@@ -1,0 +1,49 @@
+Zadanie 2:
+
+Stworzymy praktyczny zbiór klas odpowiadający za przechowywanie konfiguracji
+wewnątrz aplikacji. Naturalne jest posiadanie w programie plików konfiguracyjnych
+które zawierają pewne parametry wykonania. My stworzymy aplikację która będzie ładowała
+dane z pliku konfiguracyjnego i będzie przechowywała w singletonie (aby mieć do nich dostęp wszędzie).
+
+Nasza aplikacja będzie czymś w rodzaju gry. Zasada działania gry. Po rozpoczęciu gry aplikacja losuje dwie liczby, oraz losuje działanie matematyczne, a następnie zadaje pytanie użytkownikowi:
+Ile wynosi {liczba1} {działanie} {liczba2}?
+
+i użytkownik musi odpowiedzieć. Przykład:
+
+liczba wylosowana 1 : 50
+liczba wylosowana 2 : 30
+działanie wylosowane : *
+
+Zadane pytanie:
+Ile wynosi 50 * 30?
+
+
+Jeśli użytkownik odpowie poprawnie otrzymuje punkt, jeśli niepoprawnie nie otrzymuje punktu.
+
+Aplikacja ma ustawienia ładowane z pliku:
+zakres_liczby_1=1000
+zakres_liczby_2=10000
+dostepne_dzialania=*/+-
+ilosc_rund=10
+
+Na podstawie tych ustawien powinna byc prowadzona rozgrywka 10 rund. po 10 rundach zaprezentuj uzytkownikowi wynik.
+Stwórz:
+- klasę która odpowiada za czytanie konfiguracji z pliku i ładowanie go do klasy "MySettings"
+- klasę MySettings która posiada mapę konfiguracji ( nie musi być mapa, mogą być 4 zmienne)
+
+
+*Dodatkowe:
+Wykonaj singletona na 3 sposoby:
+eager
+lazy
+używając enum’a
+
+Singleton 2 - step by step:
+1. Stwórz klasę która posiada metodę ładowania wartości z pliku. W tej metodzie przeczytaj 4 linie pliku, wyciągnij z
+tych linii te 4 wartości i przypisz je do zmiennych lokalnych.
+2. Stwórz klasę MySettings która jest singletonem (przyjmij dowolną formę) i dodaj w niej odpowiednie pola, a następnie
+ gettery i settery
+3. Stwórz maina, w mainie najpierw stwórz instancję klasy która ładuje wartości z pliku konfiguracyjnego
+4. Zmodyfikuj metodę ładującą wartości z pliku konfiguracyjnego. Spraw aby wartości (po załadowaniu) zostały załadowane
+ do singletona posługując się jego setterami.
+5. Zaimplementuj grę (logikę losowania liczb, wyświetlania wszystkiego itd.)
