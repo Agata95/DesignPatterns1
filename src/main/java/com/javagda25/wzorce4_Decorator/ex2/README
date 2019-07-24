@@ -1,0 +1,36 @@
+Zadanie 2:
+Aplikacja Pizzeria (hawajska dla każdego):
+
+Chodzi o stworzenie abstrakcji dla pizzerii i jej pizz. Posługując się dekoratorem stworzymy różne rodzaje
+dodatków do pizzy.
+
+Mamy dwie klasy pizzy:
+SimplePizza - klasa pizzy podstawowej (pizza podstawowa zawiera ser i sos), która posiada listę składników
+oraz cenę pizzy,
+CustomPizza - klasa pizzy udekorowanej z własnymi dodatkami, która posiada jako pole instancję dekorowanej
+pizzy, oraz listę dodatków nałożonych na tą pizzę.
+
+Stwórz interfejs który powinien posiadać metody:
+List<String> getIngredients(),
+double getPrice() - w przypadku simple pizza zwraca wartość pola, w przypadku customPizza zwraca cenę pizzy
+podstawowej + ilość składników * 2.50
+
+W klasie CustomPizza dodaj metodę:
+void addIngredient(String ingredient);
+
+--- po ukonczeniu powyższego:
+Stwórz fabrykę abstrakcyjną, nazwij ją Pizzeria, a w niej stwórz metody stworzeniowe do pizzy:
+pizza MargharritaPizza,
+pizza PineapplePizza,
+PepperoniPizza,
+QuattroFormaggi
+i cośtam jeszcze...
+
+
+--- po ukonczeniu powyższego:
+Stwórz w Pizzeria metodę która dodaje do pizzy dowolną ilość innych dodatków
+
+--- po ukonczeniu powyższego:
+Sprawdź czy Twoja pizza może być dekorowana kilkakrotnie.
+Stwórz takiego maina, który pozwala na zamówienie pizzy z dowolną ilością udekorowań, a po zakończeniu procesu
+zamawiania wypisuje jaka pizza została zamówiona.
