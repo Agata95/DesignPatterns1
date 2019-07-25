@@ -1,0 +1,18 @@
+Zadanie 2:
+Dokończyć aplikację:
+Implementując wzorzec projektowy strategia stwórz aplikację która na początku pyta użytkownika o sposób
+ładowania danych do aplikacji, a następnie podmień strategię ładowania danych do programu. Istnieje klasa
+InputReader której instancję należy stworzyć na początku działania aplikacji (w mainie). Aplikacja powinna
+przyjmować komendę zmiany strategii:
+set_strategy file/random/std_in
+oraz pobierania kolejnych danych z wejścia:
+get_int - pobiera inta:
+        -- w przypadku strategii z pliku przyjmuje następnego inta z pliku
+        -- w przypadku std_in przyjmuje ze scannera
+        -- w przypadku random generuje randomowo liczbę i ją zwraca
+get_string - pobiera stringa ^ strategia działa tak samo
+get_double - pobiera double ^ strategia działa tak samo
+
+UWAGA! Jeśli np. w pliku nie ma danych, powinien się pojawić odpowiedni komunikat.
+
+https://bitbucket.org/nordeagda2/designpatternstrategyinput/overview

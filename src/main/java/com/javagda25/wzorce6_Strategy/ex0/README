@@ -1,0 +1,30 @@
+Zadanie 0:
+Stwórz interfejs IFormatterCzcionki, która posiada metodę:
+
+ - String zamienTekst(String tekstDoZamiany);
+
+Stwórz klasy implementujące podany intefejs:
+ - FormatterUpper - w swojej metodzie zamienTekst podmienia tekst na same wielkie litery
+ - FormatterLower - w swojej metodzie zamienTekst podmienia tekst na same małe litery
+ - FormatterTrim - w swojej metodzie zamienTekst trimuje tekst (metoda trim() na string)
+ - FormatterInverter - zamienia duze litery na małe litery, a małe litery na duże litery
+ - FormatterSplitter - dzieli cały tekst na pojedyncze znaki i zwraca z powrotem ten sam tekst, tylko dopisuje
+ między wszystkimi znakami dodatkowe spacje (czyli zamienia tekst 'to jest tekst' na: 't o   j e s t   t e k s t')
+
+Stwórz klasę Drukarka, w klasie stwórz jedno pole i analogicznie do klasy Bohater z przykładu dodaj do niej jedno
+pole strategii:
+IFormatterCzcionki formatter = new FormatterUpper();
+
+Stwórz obsługę maina, który powinien obsługiwać dwie komendy:
+ - komenda 'zmien' a po niej powinna wystąpić nazwa formattera. np. 'zmien upper', 'zmien inverter', 'zmien splitter'.
+  W zależności od tego którego formattera użyjemy, tak powinna się zmienić referencja w zmiennej formatter
+  (wyżej zadeklarowana). Ustawia odpowiednią instancję Formatter w drukarce.
+ - komenda 'formatuj' po której występuje tekst do sformatowania. np.
+
+formatuj to jest tekst
+
+powinno wypisać:
+
+t o   j e s t   t e k s t
+jeśli do zmiennej formatter jest przypisany FormatterSplitter.
+Komenda ‘formatuj’ powinna zamieniać tekst i wypisywać go na ekran.
