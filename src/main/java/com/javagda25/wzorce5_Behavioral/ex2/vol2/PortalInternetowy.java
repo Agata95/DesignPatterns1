@@ -1,6 +1,4 @@
-package com.javagda25.wzorce5_Behavioral.ex2;
-
-import com.javagda25.wzorce5_Behavioral.ex2.ChatRoom;
+package com.javagda25.wzorce5_Behavioral.ex2.vol2;
 
 import java.util.List;
 

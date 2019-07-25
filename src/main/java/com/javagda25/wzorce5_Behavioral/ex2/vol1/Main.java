@@ -1,4 +1,4 @@
-package com.javagda25.wzorce5_Behavioral.ex2;
+package com.javagda25.wzorce5_Behavioral.ex2.vol1;
 
 public class Main {
     public static void main(String[] args) {
