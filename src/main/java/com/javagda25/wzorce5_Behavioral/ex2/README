@@ -1,0 +1,11 @@
+Zad 2:
+Stwórz klasę PokójChat’owy. Do pokoju mogą dołączać użytkownicy (klasa User). Do pokoju dołączają użytkownicy.
+Użytkownicy są Observerami, pokój jest Observable. Dodaj w pokoju metodę “wyślijWiadomosc(String wiadomosc)”
+która rozsyła wiadomość do wszystkich użytkowników.
+
+Rozwinięcie:
+Stwórz klasę PortalInternetowy który posiada listę pokojów. Dodaj funkcje do dodawania i usuwania pokojów, a
+także listowania pokojów.
+
+Dodaj funkcję dodawania użytkownika do pokoju i po dodaniu użytkownika do pokoju umożliwiaj rozsyłanie wiadomości
+wyłącznie w obrębie pokoju. Pamiętaj o usuwaniu użytkownika z listy observable jak zmienia pokój!
